@@ -39,7 +39,7 @@ from fastavro import writer, reader, schema
 
 
 print("--------------------new----------------------")
-path_avro_file='/home/jiayachong/avrome/testdata2'
+path_avro_file='/home/jiayachong/avrome/work/parsing-cell-path'
 
 scan_result_lst = []
 print('----cell_avro_path:-------')
