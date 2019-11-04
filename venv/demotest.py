@@ -5,10 +5,7 @@ import os
 import glob
 import re
 import pathlib
-
-import  reader, schema
-import writer
-import fastavro
+from fastavro import writer, reader, schema
 
 path_avro_file='C:\\Users\\yacjia\\soft\\data\\classifier\\result-new-type'
 files = os.listdir(path_avro_file)
