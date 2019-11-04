@@ -59,3 +59,35 @@ for file in files:
         avro_reader = reader(open(path_avro_file, "rb"))
         for scan_result in avro_reader:
             scan_result_lst.append(scan_result)
+
+
+    print("""
+    
+72.acct_id.cell_decision.avro        72.countryCode.post_decision.avro  72.ip_addr.post_decision.avro
+72.acct_id.post_decision.avro        72.countryCode.pre_decision.avro   72.ip_addr.pre_decision.avro
+72.acct_id.pre_decision.avro         72.country.post_decision.avro      72.key_info.cell_decision.avro
+72.age_info.cell_decision.avro       72.country.pre_decision.avro       72.key_info.post_decision.avro
+72.age_info.post_decision.avro       72.data_info.cell_decision.avro    72.key_info.pre_decision.avro
+72.age_info.pre_decision.avro        72.data_info.post_decision.avro    72.name_info.cell_decision.avro
+72.birthday.cell_decision.avro       72.data_info.pre_decision.avro     72.name_info.post_decision.avro
+72.birthday.post_decision.avro       72.email.cell_decision.avro        72.name_info.pre_decision.avro
+72.birthday.pre_decision.avro        72.email_info.cell_decision.avro   72.phone.cell_decision.avro
+72.car_number.cell_decision.avro     72.email_info.post_decision.avro   72.phone_info.cell_decision.avro
+72.car_number.post_decision.avro     72.email_info.pre_decision.avro    72.phone_info.post_decision.avro
+72.car_number.pre_decision.avro      72.email.post_decision.avro        72.phone_info.pre_decision.avro
+72.company_addr.cell_decision.avro   72.email.pre_decision.avro         72.phone.post_decision.avro
+72.company_addr.post_decision.avro   72.family_addr.cell_decision.avro  72.phone.pre_decision.avro
+72.company_addr.pre_decision.avro    72.family_addr.post_decision.avro  72.product_info.cell_decision.avro
+72.company.cell_decision.avro        72.family_addr.pre_decision.avro   72.product_info.post_decision.avro
+72.company_name.cell_decision.avro   72.family_name.cell_decision.avro  72.product_info.pre_decision.avro
+72.company_name.post_decision.avro   72.family_name.post_decision.avro  72.runoob_author.cell_decision.avro
+72.company_name.pre_decision.avro    72.family_name.pre_decision.avro   72.runoob_author.post_decision.avro
+72.company_phone.cell_decision.avro  72.full_name.cell_decision.avro    72.runoob_author.pre_decision.avro
+72.company_phone.post_decision.avro  72.full_name.post_decision.avro    72.runoob_title.cell_decision.avro
+72.company_phone.pre_decision.avro   72.full_name.pre_decision.avro     72.runoob_title.post_decision.avro
+72.company.post_decision.avro        72.gender.cell_decision.avro       72.runoob_title.pre_decision.avro
+72.company.pre_decision.avro         72.gender.post_decision.avro       configFile
+72.country.cell_decision.avro        72.gender.pre_decision.avro        input.avro
+72.countryCode.cell_decision.avro    72.ip_addr.cell_decision.avro      _SUCCESS
+    
+    """)
