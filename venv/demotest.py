@@ -38,30 +38,30 @@ from fastavro import writer, reader, schema
     #     scan_result_lst.append(scan_result)
 
 
-print("--------------------new----------------------")
-path_avro_file='/home/jiayachong/avrome/work/parsing-cell-path'
+    print("--------------------new----------------------")
+    path_avro_file='/home/jiayachong/avrome/work/parsing-cell-path'
 
-scan_result_lst = []
-print('----cell_avro_path:-------')
-print(path_avro_file)
-if os.path.isdir(path_avro_file):
-    files = os.listdir(path_avro_file)
-    path = path_avro_file + '/*cell_decision.avro'
-    for filename in glob.glob(path):
-        print("--file_full_path--: " + filename)
-        avro_reader = reader(open(filename, "rb"))
+    scan_result_lst = []
+    print('----cell_avro_path:-------')
+    print(path_avro_file)
+    if os.path.isdir(path_avro_file):
+        files = os.listdir(path_avro_file)
+        path = path_avro_file + '/*cell_decision.avro'
+        for filename in glob.glob(path):
+            print("--file_full_path--: " + filename)
+            avro_reader = reader(open(filename, "rb"))
+            for scan_result in avro_reader:
+                scan_result_lst.append(scan_result)
+    else:
+        avro_reader = reader(open(path_avro_file, "rb"))
         for scan_result in avro_reader:
             scan_result_lst.append(scan_result)
-else:
-    avro_reader = reader(open(path_avro_file, "rb"))
-    for scan_result in avro_reader:
-        scan_result_lst.append(scan_result)
 
 
-print('-----------------------------------------------------------------')
-for record in scan_result_lst:
-    print(record)
-print(len(scan_result_lst))
+    print('-----------------------------------------------------------------')
+    for record in scan_result_lst:
+        print(record)
+    print(len(scan_result_lst))
 
 #     print("""
 #
