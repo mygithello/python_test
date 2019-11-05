@@ -37,7 +37,7 @@ from fastavro import writer, reader, schema
     # for scan_result in avro_reader:
     #     scan_result_lst.append(scan_result)
 
-
+def dd():
     print("--------------------new----------------------")
     path_avro_file='/home/jiayachong/avrome/work/parsing-cell-path'
 
@@ -63,6 +63,9 @@ from fastavro import writer, reader, schema
         print(record)
     print(len(scan_result_lst))
 
+
+    
+dd()
 #     print("""
 #
 # 72.acct_id.cell_decision.avro        72.countryCode.post_decision.avro  72.ip_addr.post_decision.avro
