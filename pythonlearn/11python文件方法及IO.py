@@ -161,12 +161,17 @@ chdir()方法
 """)
 
 
-print("""
+print("""----------------------删除目录－－－在删除这个目录之前，它的所有内容应该先被清除。－－－－－－－
 rmdir()方法
 rmdir()方法删除目录，目录名称以参数传递。
 在删除这个目录之前，它的所有内容应该先被清除。
 """)
 # os.rmdir('/home/jiayachong/PycharmProjects/python_test/pythonlearn/testdir/test1')
+
+print(""" ------------------删除文件－－－－－－os.remove() 方法用于删除指定路径的文件。如果指定的路径是一个目录，将抛出OSError－－－－
+os.remove(path)
+""")
+
 
 print("""
 File 对象和 OS 对象提供了很多文件与目录的操作方法           
