@@ -4,9 +4,6 @@ Numbers_In_Line = 16 #一行有几个数字
 '''
 * 将一个文件转换为二进制文件(binary)
 * python3 tran_to_binary.py input_file out_file
-
-
-
 '''
 class TranStrToBinary():
     def tran_string_to_binary(self,buf):
