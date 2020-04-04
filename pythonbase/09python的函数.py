@@ -150,8 +150,10 @@ print("函数外是全局变量 : ", total)
 
 
 
+print("python　的类型转换函数：str(),int(),float()")
 
-
+print(float(3.43))
+print(type(float(3.43)))
 
 
 
