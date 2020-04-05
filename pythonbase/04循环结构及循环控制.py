@@ -146,3 +146,19 @@ print("－－－－－－－－－－－－－－键值对遍历")
 for k,v in group.items():
     print(k+" : "+v)
 
+
+print("===========while 循环=================================")
+# while循环和for循环的区别：
+# #for擅⻓处理固定次，⾃动遍历各序列
+# #while处理不定次数的循环，条件为False便停⽌
+#当条件为真时，执⾏循环语句，只要条件为真，便会⼀直运行下去
+
+# while 循环
+#     else　关键字用法
+#⽆论是否进⼊循环，最后都会执⾏esle语句，除⾮执⾏break语句跳出循环
+count = 3
+while count >2:
+    print('while 循环')
+    count = count -1
+else: #无论是否进入循环都
+    print('else　关键字用法')
