@@ -3,13 +3,13 @@ print("""
 参考：　　https://www.runoob.com/python/python-built-in-functions.html
 
 内置函数
-bool(),int(),str(),input()，len()，list()，type()
+bool(),int(),str(),input()，len()，list()，type(),print()
 range()
 =============================================================================	
 abs()	divmod()		open()	staticmethod()
 all()	enumerate()		ord()	
 any()	eval()	isinstance()	pow()	sum()
-basestring()	execfile()	issubclass()	print()	super()
+basestring()	execfile()	issubclass()		super()
 bin()	file()	iter()	property()	tuple()
 filter()			
 bytearray()	float()		raw_input()	unichr()
