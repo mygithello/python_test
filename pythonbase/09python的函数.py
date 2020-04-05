@@ -9,6 +9,11 @@ print("""
 5.return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。
 """)
 
+print("""
+常用函数使用：
+
+""")
+
 # def functionname( parameters ):
 #     "函数_文档字符串"
 #     function_suite
@@ -150,11 +155,14 @@ print("函数外是全局变量 : ", total)
 
 
 
-print("python　的类型转换函数：str(),int(),float()")
+print("python　的数据类型转换函数：str(),int(),float(),list()")
 
 print(float(3.43))
 print(type(float(3.43)))
 
+a='list()函数的使用，把数据转换成列表类型'
+print(list(a))
+print(type(list(a)))
 
 
 

@@ -6,8 +6,10 @@ data = [ { 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ]
 
 jss = json.dumps(data)
 print(jss)
+print(type(jss))
 data2=json.loads(jss)
 print(data2)
+print(type(data2))
 
 """
 Python JSON
