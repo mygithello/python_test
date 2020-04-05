@@ -183,3 +183,72 @@ print(os.getcwd())
 # os.chdir("/home/jiayachong/PycharmProjects/python_test/pythonlearn/testdir/test1")
 print(os.getcwd())
 
+
+
+"""
+⽂件读写三步骤
+第⼀步，打开⽂件
+第⼆步，读（写）⽂件
+第三步，关闭⽂件
+打开⽂件语法
+open(file, mode, encoding)
+#打开⽂件
+with open() as…
+#使⽤这种⽅式打开⽂件，可以不使⽤close()关闭⽂件
+读写模式mode
+1 f = open('/letter.txt', 'r', encoding = 'UTF-8')
+1 with open('/letter.txt', 'r', encoding = 'UTF-8') as f:
+
+读写⽂件语法
+read()
+#读取⽂件内容
+with open('/letter.txt','r',encoding = 'UTF-8') as f:
+content = f.read()
+#以字符串的形式读取文件内容，将文件内容赋值给变量content
+
+
+readlines()
+#以列表的⽅式读取⽂件内容
+with open('/letter.txt','r',encoding = 'UTF-8') as f:
+content = f.readlines()
+#以列表的形式读取文件内容，将文件内容赋值给变量content
+
+
+write()
+#清空⽂件内容，并写⼊字符串⼊内容
+with open('/letter.txt','r',encoding = 'UTF-8') as f:
+f.write('python')
+
+
+writelines()
+#清空⽂件内容，以列表的⽅式写⼊
+with open('/letter.txt','r',encoding = 'UTF-8') as f:
+f.write('python')
+
+
+关闭⽂件语法
+close()
+#关闭⽂件
+
+
+csv文件读写的相关函数
+reader()
+import csv #导入csv模块
+with open('letter.csv') as f:
+reader = csv.reader(f) #读取csv文件，将文件内容赋值到reade
+
+
+#读取csv文件的函数
+writer()
+#将内容写入csv文件
+
+import csv #导入csv模块
+with open('letter.csv','w',newline = '') as f:
+writer = csv.writer(f) #写入csv文件
+writer.writerow(['python小课'，'风变编程']) #写入一行内容
+data = [['交互式学习'，'更简单'],['助教酱酱','为你答疑解惑']]
+writer.writerows(data) #写入多行内容
+
+
+
+"""
