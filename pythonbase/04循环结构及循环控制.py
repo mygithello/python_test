@@ -129,3 +129,20 @@ for letter in 'Python':
     print('当前字母 :', letter)
 
 print("Good bye!")
+
+
+print("-------------#字典的三种遍历方法-------------------")
+
+print('－－－－－－－－－－－－－－遍历字典key')
+#for…in dict:#遍历字典key
+group = {'师父':'唐三藏', '大师兄':'孙行者', '二师兄':'猪八戒', '沙师弟':'沙和尚'}
+for i in group:
+    print(i)
+print('－－－－－－－－－－－－－－遍历字典value')
+#for…in dict.values():#遍历字典value
+for j in group.values():
+    print(j)
+print("－－－－－－－－－－－－－－键值对遍历")
+for k,v in group.items():
+    print(k+" : "+v)
+
